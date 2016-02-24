@@ -14,8 +14,8 @@
 
 // VARIABLES & MIXINS
 
-$primary-color: white;
-$secondary-color: black;
+$primary-color: #f4f4f4;
+$secondary-color: #777;
 $tertiary-color: gray;
 
 
@@ -29,13 +29,132 @@ $large: "only screen and (min-width:900px)";
 }
 
 html {
-  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 body {
+  background: $primary-color fixed right top no-repeat;
+  background-size: cover;
+  font: 12px/17px Baskerville;
+  line-height: 2em;
+  color: $secondary-color;
+}
 
+header {
+  width: 100%;
+  background: #ffffff url(http://podcasts.joerogan.net/wp-content/themes/joerogan/css/../images/headerbg.png) repeat-x;
+  position: fixed;
+  top: 0;
+  color: $primary-color;
+  font-size: 16px;
+  z-index: 800;
 }
 
 h1 {
+  font-weight: bold;
+  text-decoration: none;
+}
 
+.wrapper {
+  width: 1010px;
+  margin: 0 auto;
+}
+
+#logo, #player, .share, .social {
+  position: relative;
+  margin: 0;
+  float: left;
+  height: 40px;
+  padding: 0 20px;
+  border-right: 1px solid #646464;
+  border-left: 1px solid #232020;
+}
+
+#logo {
+  display: block;
+  width: 175px;
+  padding: 0;
+  border-left: none;
+
+  h1 {
+    margin-top: 11px;
+    margin-left: 20px;
+  }
+}
+
+#player {
+  width: 491px;
+  padding: 0 5px;
+
+  h1 {
+    margin-top: 11px;
+    margin-left: 20px;
+  }
+}
+
+.share {
+  width: 166px;
+  // line-height: 38px;
+  text-align: right;
+
+  h1 {
+    margin-top: 11px;
+    margin-left: 20px;
+  }
+}
+
+.social {
+  width: 102px;
+  border-right: none;
+  padding-right: 0;
+
+  h1 {
+    margin-top: 11px;
+    margin-left: 20px;
+  }
+}
+
+#nav-container {
+  clear: both;
+  width: 840px;
+  padding-top: 2px;
+  margin: 0 auto;
+
+}
+
+ul {
+  display: block;
+}
+
+#nav {
+  text-align: center;
+  background: #fff;
+
+  li {
+    margin: 0 10px;
+    width: auto;
+    display: inline-block;
+  }
+
+  a {
+    color: #211e1e;
+    display: block;
+    font-size: 20px;
+    padding: 5px 6px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid #fff;
+    font-weight: bold;
+
+    .current {
+      color: #444;
+      border-bottom: 2px solid #00aaa1;
+    }
+  }
 }

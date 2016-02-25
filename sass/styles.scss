@@ -158,3 +158,32 @@ ul {
     }
   }
 }
+
+#container {
+  width: 95%;
+  margin-top: 100px;
+}
+
+.episode-slider {
+  background-color: orange;
+  float: left;
+  width: 30%;
+}
+
+.image-slider {
+  float: right;
+  width: 60%;
+  // margin-top: 100px;
+  // position: relative;
+}
+
+.episode-slider, .image-slider {
+  height: 100%;
+}
+
+.slide {
+  height: 450px;
+  // position: absolute;
+  left: 0;
+  top: 0;
+}

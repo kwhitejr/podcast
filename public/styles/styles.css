@@ -149,3 +149,24 @@ ul {
     #nav a .current {
       color: #444;
       border-bottom: 2px solid #00aaa1; }
+
+#container {
+  width: 95%;
+  margin-top: 100px; }
+
+.episode-slider {
+  background-color: orange;
+  float: left;
+  width: 30%; }
+
+.image-slider {
+  float: right;
+  width: 60%; }
+
+.episode-slider, .image-slider {
+  height: 100%; }
+
+.slide {
+  height: 450px;
+  left: 0;
+  top: 0; }

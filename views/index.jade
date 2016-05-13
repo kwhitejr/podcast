@@ -6,8 +6,11 @@ block title
 block content
   header
     include ./partials/header.jade
-  div(id="container")
-    div(class="episode-slider")
-      include ./partials/episode-slides.jade
-    div(class="image-slider")
-      include ./partials/image-slides.jade
+  div#main
+    div.container
+      div.episode-slider
+        include ./partials/episode-slides.jade
+      div.image-slider
+        include ./partials/image-slides.jade
+  footer#footer
+    include ./partials/footer.jade

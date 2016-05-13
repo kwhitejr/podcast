@@ -58,18 +58,18 @@ html {
   background: transparent; }
 
 body {
-  background: #f4f4f4 fixed right top no-repeat;
+  background: #A56937 fixed right top no-repeat;
   background-size: cover;
   font: 12px/17px Baskerville;
   line-height: 2em;
-  color: #777; }
+  color: #724E34; }
 
 header {
   width: 100%;
   background: #ffffff url(http://podcasts.joerogan.net/wp-content/themes/joerogan/css/../images/headerbg.png) repeat-x;
   position: fixed;
   top: 0;
-  color: #f4f4f4;
+  color: #A56937;
   font-size: 16px;
   z-index: 800; }
 
@@ -150,23 +150,58 @@ ul {
       color: #444;
       border-bottom: 2px solid #00aaa1; }
 
-#container {
-  width: 95%;
-  margin-top: 100px; }
+#main {
+  display: flex;
+  justify-content: center; }
+
+.container {
+  display: flex;
+  width: 1200px;
+  margin-top: 100px;
+  background-color: green; }
 
 .episode-slider {
   background-color: orange;
   float: left;
-  width: 30%; }
+  width: 400px; }
 
 .image-slider {
   float: right;
-  width: 60%; }
+  width: 800px; }
 
 .episode-slider, .image-slider {
-  height: 100%; }
+  height: 532px; }
 
 .slide {
-  height: 450px;
+  height: 100%;
   left: 0;
   top: 0; }
+
+footer {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background: #fff;
+  border-top: 1px solid #ccc;
+  text-transform: uppercase;
+  font-size: 10px;
+  z-index: 1000; }
+
+.footer-container {
+  width: 980px;
+  margin: 0 auto;
+  text-align: center; }
+
+.menu-footer-container {
+  width: 400px;
+  float: left; }
+
+.menu {
+  list-style: none; }
+  .menu .li {
+    list-style: none;
+    float: left;
+    margin-right: 26px;
+    line-height: 30px; }

@@ -14,9 +14,12 @@
 
 // VARIABLES & MIXINS
 
-$primary-color: #f4f4f4;
-$secondary-color: #777;
-$tertiary-color: gray;
+$primary-brown: #A56937;
+$secondary-brown: #724E34;
+$third-brown: #411300;
+$fourth-brown: #230000;
+$off-white: #F3F5F4;
+$blue: #091854;
 
 
 // MEDIA QUERY RANGES
@@ -39,11 +42,11 @@ html {
 }
 
 body {
-  background: $primary-color fixed right top no-repeat;
+  background: $primary-brown fixed right top no-repeat;
   background-size: cover;
   font: 12px/17px Baskerville;
   line-height: 2em;
-  color: $secondary-color;
+  color: $secondary-brown;
 }
 
 header {
@@ -51,7 +54,7 @@ header {
   background: #ffffff url(http://podcasts.joerogan.net/wp-content/themes/joerogan/css/../images/headerbg.png) repeat-x;
   position: fixed;
   top: 0;
-  color: $primary-color;
+  color: $primary-brown;
   font-size: 16px;
   z-index: 800;
 }
@@ -159,31 +162,78 @@ ul {
   }
 }
 
-#container {
-  width: 95%;
+#main {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  // justify-content: center;
+  width: 1200px;
+  // margin-left: auto;
+  // margin-right: auto;
   margin-top: 100px;
+  // position: absolute;
+  background-color: green;
 }
 
 .episode-slider {
   background-color: orange;
   float: left;
-  width: 30%;
+  width: 400px;
 }
 
 .image-slider {
   float: right;
-  width: 60%;
-  // margin-top: 100px;
+  width: 800px;
   // position: relative;
 }
 
 .episode-slider, .image-slider {
-  height: 100%;
+  // display: inline-block;
+  height: 532px;
+  // margin-top: 100px;
 }
 
 .slide {
-  height: 450px;
+  height: 100%;
   // position: absolute;
   left: 0;
   top: 0;
+}
+
+footer {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background: #fff;
+  border-top: 1px solid #ccc;
+  text-transform: uppercase;
+  font-size: 10px;
+  z-index: 1000;
+}
+
+.footer-container {
+  width: 980px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.menu-footer-container {
+  width: 400px;
+  float: left;
+}
+
+.menu {
+  list-style: none;
+
+  .li {
+    list-style: none;
+    float: left;
+    margin-right: 26px;
+    line-height: 30px;
+  }
 }
